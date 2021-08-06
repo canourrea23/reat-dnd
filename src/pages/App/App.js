@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom'
 import ClassList from '../ClassList/ClassList';
 import NavBar from '../../components/NavBar/NavBar/NavBar';
 import ClassDetails from '../ClassDetails/ClassDetails'
+import MonsterList from '../MonsterList/MonsterList';
 
 
 class App extends Component {
@@ -28,6 +29,9 @@ class App extends Component {
           <ClassDetails 
             location={location}
           />
+        }/>
+        <Route exact path='/monster-list' render={() =>
+          <MonsterList />
         }/>
       </>
     );

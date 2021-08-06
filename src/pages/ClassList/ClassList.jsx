@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { getClassList } from '../../services/api-calls'
-// Don't forget to import { Link }
 import { Link } from "react-router-dom";
 
 class ClassList extends Component {
@@ -25,8 +24,6 @@ class ClassList extends Component {
                     to={{
                     // The pathname is where we'll route to
                     pathname: `/class`,
-                    // The state will be accessible via location 
-                                        // in the component we pass it to!
                     state: { classTitle },
                     }}
                 >
